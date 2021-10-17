@@ -11,7 +11,7 @@ def Register():
             password_file.close()
             print('> Account created!')
             break
-        elif password == confirm_password:
+        elif password != confirm_password:
             print('> Error, passwords do not match')
             continue
 
